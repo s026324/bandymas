@@ -36,31 +36,6 @@ export default class App extends Component {
      }
    }
 
-   _changeStyle() {
-    var color = colors[Math.floor(Math.random() * colors.length)];
-    this.setState({
-        color: color,
-    })
-    }
-
-     _changeStyle2() {
-      var color = colors[Math.floor(Math.random() * colors.length)];
-      this.setState({
-          color2: color,
-      })
-      }
-      _changeStyle3() {
-        var color = colors[Math.floor(Math.random() * colors.length)];
-        this.setState({
-            color3: color,
-        })
-        }
-        _changeStyle4() {
-      var color = colors[Math.floor(Math.random() * colors.length)];
-      this.setState({
-          color4: color,
-      })
-      }
 
   render() {
     return (
@@ -68,21 +43,18 @@ export default class App extends Component {
         <View style={styles.flexBox1}>
         <View style={styles.containerTwo}>
         <TouchableOpacity
-        onPress={() => this._changeStyle()}>
+ >
             <Text style = {styles.textButton}> mygtukas1 </Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => this._changeStyle2()}>
+        <TouchableOpacity>
             <Text style = {styles.textButton}> mygtukas2 </Text>
         </TouchableOpacity>
           </View>
           <View style={styles.containerThree}>
-        <TouchableOpacity
-          onPress={() => this._changeStyle3()}>
+        <TouchableOpacity>
             <Text style = {styles.textButton}> mygtukas3 </Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => this._changeStyle4()}>
+        <TouchableOpacity>
             <Text style = {styles.textButton}> mygtukas4 </Text>
         </TouchableOpacity>
           </View>
